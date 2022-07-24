@@ -1,9 +1,31 @@
-{"namespace": "com.example.avro",
-  "type": "record",
-  "name": "EmployeeDetails",
-  "fields": [
-    { "name" : "employeeName" , "type" : "string" },
-     { "name" : "role" , "type" : "string" },
-     { "name" : "gender" , "type" : "string" }
-  ]
+{
+  "type" : "record",
+  "name" : "EmployeeDetails",
+  "namespace" : "com.gap.avro.inventory.inventoryposition",
+  "fields" : [ {
+    "name" : "employeeName",
+    "type" : "string"
+  }, {
+    "name" : "role",
+    "type" : "string"
+  }, {
+    "name" : "gender",
+    "type" : "string"
+  }, {
+    "name" : "department",
+    "type" : {
+      "type" : "array",
+      "items" : {
+        "type" : "record",
+        "name" : "Department",
+        "fields" : [ {
+          "name" : "deptid",
+          "type" : "string"
+        }, {
+          "name" : "deptname",
+          "type" : "string"
+        } ]
+      }
+    }
+  } ]
 }
