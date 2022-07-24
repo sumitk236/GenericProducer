@@ -14,18 +14,15 @@
   }, {
     "name" : "department",
     "type" : {
-      "type" : "array",
-      "items" : {
-        "type" : "record",
-        "name" : "Department",
-        "fields" : [ {
-          "name" : "deptid",
-          "type" : "string"
-        }, {
-          "name" : "deptname",
-          "type" : "string"
-        } ]
-      }
+      "type" : "record",
+      "name" : "Department",
+      "fields" : [ {
+        "name" : "deptid",
+        "type" : "string"
+      }, {
+        "name" : "deptname",
+        "type" : "string"
+      } ]
     }
   } ]
 }
